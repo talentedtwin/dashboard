@@ -1,8 +1,6 @@
 import Image from "next/image";
 
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { FcGoogle } from "react-icons/fc";
 import {
   RegisterLink,
@@ -27,7 +25,7 @@ export default function Dashboard() {
           <div className="grid gap-4">
             <EmailInput />
             <Button variant="outline" className="w-full">
-              <RegisterLink
+              <LoginLink
                 className="w-full flex items-center justify-center"
                 authUrlParams={{
                   connection_id:
@@ -36,7 +34,7 @@ export default function Dashboard() {
               >
                 <FcGoogle className="mr-5" />
                 Login with Google
-              </RegisterLink>
+              </LoginLink>
             </Button>
           </div>
           <div className="mt-4 text-center text-sm">
